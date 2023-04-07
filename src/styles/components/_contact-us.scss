@@ -1,0 +1,50 @@
+.contact-us {
+
+    .block {
+        padding-top: 64px;
+    }
+
+    .callback-form__wrapper {
+        .contacts {
+            width: 100%;
+            max-width: 639px;
+
+            .flex-wrapper {
+                @include flex-params(row, space-between, flex-start);
+
+                h6 {
+                    @include font-params(600, 16px, 24px);
+                    margin-bottom: 8px;
+                }
+
+                ul {
+                    li {
+                        width: 100%;
+
+                        &::before {
+                            display: none;
+                        }
+
+                        a {
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .email-link {
+                    @include font-params(600, 16px, 24px);
+                }
+
+                p {
+                    max-width: 309px;
+                    @include font-params(400, 16px, 24px);
+
+                    &.break-time {
+                        margin-top: 4px;
+                        color: #A3A3A7;
+                    }
+                }
+            }
+        }
+    }
+}
